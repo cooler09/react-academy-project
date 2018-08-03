@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Button } from 'react-bootstrap';
 
 class Counter extends Component {
   constructor(props){
@@ -10,8 +9,9 @@ class Counter extends Component {
     };
     this.Increment = this.Increment.bind(this);
   }
-    Increment()
+    Increment(evt)
     {
+      console.log(evt);
       this.setState({
         count: this.state.count + 1
       });
